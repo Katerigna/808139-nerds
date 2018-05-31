@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Katsiaryna  Hanchar](https://up.htmlacademy.ru/htmlcss/21/user/808139).
-* Наставник: [Роман Гуринович]  (https://up.htmlacademy.ru/htmlcss/21/user/561773).
+* Наставник: [Роман Гуринович](https://up.htmlacademy.ru/htmlcss/21/user/561773).
 
 ---
 
