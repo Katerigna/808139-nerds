@@ -6,82 +6,153 @@
   </head>
   <body>
   	<header>
-  		<nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<a href="index.html">
-            <li><img src="logo.jpeg" alt=logo></li>
-          </a>
-  				<li><a href="studio.html">Студия</a></li>
-  				<li><a href="clients.html">Клиенты</a></li>
-  				<li><a href="shop.html">Магазин</a></li>
-  				<li><a href="contacts.html">Контакты</a></li>
-  				<li><a href="basket.html">Корзина</a></li>
-  			</ul>
-  		</nav>
-  	</header>
+
+      <nav class="main-navigation">
+
+        <img class="logo" src="logo.jpeg" alt=logo>
+
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
+          <li class="site-navigation-item"><a href="clients.html">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <a href="basket.html">Корзина</a>
+
+      </nav>
+
+    </header>
 
   	<main>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
 
       <section class="filter">
 
-        <h2>Стоимость:</h2>
+        <h2 class="filter-price-title">Стоимость:</h2>
         <input type="range" name="price"> 
         <span>от</span>
         <input type="number" name="min price" value="0" max="15000"> 
         <span>до</span>
         <input type="number" name="max price" value="15000" max="15000">  
 
-        <h2>Сетка:</h2>
-        <ul>
-          <li><input type="checkbox" name="adaptive">Адаптивная</li>  
-          <li><input type="checkbox" name="fixed">Фиксированная</li> 
-          <li><input type="checkbox" name="elastic">Резиновая</li>         
+        <h2 class="filter-grid-title">Сетка:</h2>
+        <ul class="filter-grid-list">
+          <li class="filter-grid-item"><input type="checkbox" name="adaptive">Адаптивная</li>  
+          <li class="filter-grid-item"><input type="checkbox" name="fixed">Фиксированная</li> 
+          <li class="filter-grid-item"><input type="checkbox" name="elastic">Резиновая</li>         
         </ul>
 
         <h2>Особенности</h2>
-        <ul>
-          <li><input type="checkbox" name="slider"> Слайдер</li>
-          <li><input type="checkbox" name="adventages section"> Блок преимуществ</li>
-          <li><input type="checkbox" name="news"> Новости</li>
-          <li><input type="checkbox" name="gallery"> Галерея</li>
-          <li><input type="checkbox" name="basket"> Корзина</li>
+        <ul class="filter-features-list">
+          <li class="filter-features-item"><input type="checkbox" name="slider"> Слайдер</li>
+          <li class="filter-features-item"><input type="checkbox" name="adventages section"> Блок преимуществ</li>
+          <li class="filter-features-item"><input type="checkbox" name="news"> Новости</li>
+          <li class="filter-features-item"><input type="checkbox" name="gallery"> Галерея</li>
+          <li class="filter-features-item"><input type="checkbox" name="basket"> Корзина</li>
         </ul>
 
-        <button>Показать</button>
+        <button class="filter-submit">Показать</button>
       </section>
 
-      <h2>Сортировать:</h2>
-      <ul>
-        <li>По цене</li>
-        <li>По типу</li>
-        <li>Ао названию</li>
+      <h2 class="sort-title">Сортировать:</h2>
+      <ul class="sort-list">
+        <li class="sort-list-item">По цене</li>
+        <li class="sort-list-item">По типу</li>
+        <li class="sort-list-item">Ао названию</li>
       </ul>
 
-      <section>
-        <a href="sedona.jpeg">
-          <img src="sedona.jpeg" alt="sedona theme">
-        </a>
-        <a href="pink.jpeg">
-          <img src="pink.jpeg" alt="pink theme">
-        </a>
-        <a href="borodinsky.jpeg">
-          <img src="borodinsky.jpeg" alt="borodinsky theme">
-        </a>
-        <a href="mishka.jpeg">
-          <img src="mishka.jpeg" alt="mishla theme">
-        </a>
-        <a href="A+.jpeg">
-          <img src="A+.jpeg" alt="A+ theme">
-        </a>
-        <a href="kvast.jpeg">
-          <img src="kvast.jpeg" alt="kvast theme">
-        </a>
+      <section class="themes">
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>Следующая</button>
+        <ul class="themes-list">
+
+          <li class="themes-list-item">
+            <a href="sedona.jpeg">
+            <img src="sedona.jpeg" alt="sedona theme">
+              <section class="themes-hover">
+                <h3 class="themes-hover-title">Sedona</h3>
+                <p class="themes-hover-text">Информационный сайт для туристов</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li>
+
+          <li class="themes-list-item">
+            <a href="pink.jpeg">
+            <img src="pink.jpeg" alt="pink theme">
+            <section class="themes-hover">
+                <h3 class="themes-hover-title">Pink app</h3>
+                <p class="themes-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li>
+
+          <li class="themes-list-item">
+            <a href="borodinsky.jpeg">
+            <img src="borodinsky.jpeg" alt="borodinsky theme">
+              <section class="themes-hover">
+                <h3 class="themes-hover-title">Barbershop</h3>
+                <p class="themes-hover-text">Сайт салона красоты. Для мужчин, да.</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li>
+
+          <li class="themes-list-item">
+            <a href="mishka.jpeg">
+            <img src="mishka.jpeg" alt="mishla theme">
+              <section class="themes-hover">
+                <h3 class="themes-hover-title">Mishka</h3>
+                <p class="themes-hover-text">Интернет–магазин вязаных игрушек</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li>
+
+          <li class="themes-list-item">
+            <a href="A+.jpeg">
+            <img src="A+.jpeg" alt="A+ theme">
+              <section class="themes-hover">
+                <h3 class="themes-hover-title">A plus</h3>
+                <p class="themes-hover-text">Лендинг курсов повышения квалификации</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li> 
+        
+          <li class="themes-list-item">
+            <a href="kvast.jpeg">
+            <img src="kvast.jpeg" alt="kvast theme">
+              <section class="themes-hover">
+                <h3 class="themes-hover-title">Кваст</h3>
+                <p class="themes-hover-text">Промо–сайт производителя крафтового кваса</p>
+                <p class="themes-hover-price">9 900  руб.</p>
+              </section>
+            </a>
+          </li>
+        
+        </ul>
+
+        <ul class="themes-list-navigation">
+
+          <li class="themes-list-navigation-item">
+            <button class="themes-page">1</button>
+          </li>
+          
+          <li class="themes-list-navigation-item">
+            <button class="themes-page">2</button>
+          </li>
+          
+          <li class="themes-list-navigation-item">
+            <button class="themes-page">3</button>
+          </li>
+
+          <li class="themes-list-navigation-item">
+            <button class="themes-page">Следующая</button>
+          </li>
+
+         </ul> 
       </section>
     </main>
 
@@ -101,14 +172,28 @@
     
     
       <section class="social-networks">
-        <ul>
-          <li><a class="social-button" href="vk.com"></a></li>
-          <li><a class="social-button" href="fb.com"></a></li>
-          <li><a class="social-button" href="instagram.com"></a><li>
+
+        <ul class="social-networks-list">
+          <li class="social-networks-item"><a class="social-button" href="vk.com"></a></li>
+          <li class="social-networks-item"><a class="social-button" href="fb.com"></a></li>
+          <li class="social-networks-item"><a class="social-button" href="instagram.com"></a><li>
         </ul>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+
+        <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
+        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
       </section>
+
+      <section class="contact-form">
+        <h2 class="contact-form-title">Напишите нам</h2>
+          <h3 class="contact-form-name">Ваше имя:</h3>
+            <input class="name" type="text" name="Имя Фамилия">
+           <h3 class="contact-form-email">Ваш email:</h3> 
+            <input class="email" type="text" name="email@example.com">
+          <h3 class="contact-form-text"></h3>
+            <input class="text" type="text" name="В свободной форме">
+          <button class="contact-form-submit">Отправить</button>
+      </section>
+
     </footer>
   </body>
 </html>
