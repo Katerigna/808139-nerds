@@ -10,7 +10,7 @@
 
   		<nav class="main-navigation">
 
-        <img class="logo" src="logo.jpeg" alt=logo>
+        <a><img class="logo" src="nerds-logo.svg" alt=logo></a>
 
   			<ul class="site-navigation">
   				<li class="site-navigation-item"><a href="studio.html">Студия</a></li>
@@ -19,7 +19,7 @@
   				<li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
   			</ul>
 
-        <a href="basket.html">Корзина</a>
+        <a class="basket" href="basket.html">Корзина</a>
 
   		</nav>
 
@@ -110,12 +110,16 @@
   		<h2 class="visually-hidden">Клиенты</h2>
 
   		<section class="clients">
-  			<a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="client-item" src="img-html-academy.jpeg" alt="img-html-academy">
-        </a>
-  			<img  class="client-item" src="img-borodinsky.jpeg" alt="img-borodinsky">
-  			<img class="client-item" src="img-pink.jpeg" alt="img-pink">
-  			<img class="client-item" src="img-mishka.jpeg" alt="img-mishka">
+
+  			<ul class="clients-list">
+          <li class="clients-list-item"> <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="client-item" src="img-html-academy.jpeg" alt="img-html-academy"></a>
+
+  			 <li class="clients-list-item"><img  class="client-item" src="img-borodinsky.jpeg" alt="img-borodinsky"></li>
+  			 
+         <li class="clients-list-item"><img class="client-item" src="img-pink.jpeg" alt="img-pink"></li>
+  			 <li class="clients-list-item"><img class="client-item" src="img-mishka.jpeg" alt="img-mishka"></li>
+        </ul>
   		</section>
 
 	</main>
@@ -153,7 +157,7 @@
             <input class="name" type="text" name="Имя Фамилия">
            <h3 class="contact-form-email">Ваш email:</h3> 
             <input class="email" type="text" name="email@example.com">
-          <h3 class="contact-form-text"></h3>
+          <h3 class="contact-form-text">Текст письма:</h3>
             <input class="text" type="text" name="В свободной форме">
           <button class="contact-form-submit">Отправить</button>
       </section>
