@@ -9,7 +9,7 @@
 
       <nav class="main-navigation">
 
-        <a href="index.html"><img class="logo" src="img/nerds-logo.svg" alt=logo></a>
+        <a href="index.html"><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt=logo></a>
 
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
@@ -30,36 +30,83 @@
       <section class="filter">
 
         <h2 class="filter-price-title">Стоимость:</h2>
-        <input type="range" name="price"> 
-        <span>от</span>
-        <input type="number" name="min price" value="0" max="15000"> 
-        <span>до</span>
-        <input type="number" name="max price" value="15000" max="15000">  
 
-        <h2 class="filter-grid-title">Сетка:</h2>
-        <ul class="filter-grid-list">
-          <li class="filter-grid-item"><input type="checkbox" name="adaptive">Адаптивная</li>  
-          <li class="filter-grid-item"><input type="checkbox" name="fixed">Фиксированная</li> 
-          <li class="filter-grid-item"><input type="checkbox" name="elastic">Резиновая</li>         
+        <div class="price-range">
+          <button type="button" class="filter-price-range" name="minimal-price"></button>
+          <button type="button" class="filter-price-range" name="maximal-price"></button>
+        </div>
+
+        <label for="minimal-price">от
+        <input id="minimal-price" type="number" name="min price" value="0" max="15000"> 
+        </label>
+        <label for="maximal-price">до
+        <input id="maximal-price" type="number" name="max price" value="15000" max="15000"> 
+        </label>
+
+        <fieldset>
+          <legend class="filter-grid-title">Сетка:</legend>
+        
+          <ul class="filter-grid-list">
+            <li class="filter-grid-item">
+              <input id="filter-adaptive-grid" type="radio" name="adaptive-grid" checked>
+              <label for="adaptive-grid">Адаптивная</label>
+            </li>  
+            <li class="filter-grid-item">
+              <input id="filter-fixed-grid" type="radio" name="fixed-grid">
+              <label for="fixed-grid">Фиксированная</label>
+            </li> 
+            <li class="filter-grid-item">
+              <input id="filter-elstic-grid" type="radio" name="elastic-grid">
+              <label for="elastic-grid">Резиновая</label>
+            </li>         
+          </ul>
+
+        </fieldset>
+
+        <fieldset>
+
+        <legend class="filter-features-title">Особенности</legend>
+        
+          <ul class="filter-features-list">
+            <li class="filter-features-item">
+              <input id="slider-feature" type="checkbox" name="slider" checked>
+              <label for="slider-feature">Слайдер</label>
+            </li>
+            <li class="filter-features-item">
+              <input id="advantages-section-feature" type="checkbox" name="advantages section">
+              <label for="advantges-section-feature">Блок преимуществ</label>
+            </li>
+            <li class="filter-features-item">
+              <input id="news-feature" type="checkbox" name="news" checked>
+              <label for="news-feature">Новости</label>
+            </li>
+            <li class="filter-features-item">
+              <input id="gallery-feature" type="checkbox" name="gallery">
+              <label for="gallery-feature">Галерея</label>
+            </li>
+            <li class="filter-features-item">
+              <input id="basket-feature" type="checkbox" name="basket">
+              <label for="basket-feature">Корзина</label>
+            </li>
         </ul>
 
-        <h2>Особенности</h2>
-        <ul class="filter-features-list">
-          <li class="filter-features-item"><input type="checkbox" name="slider"> Слайдер</li>
-          <li class="filter-features-item"><input type="checkbox" name="adventages section"> Блок преимуществ</li>
-          <li class="filter-features-item"><input type="checkbox" name="news"> Новости</li>
-          <li class="filter-features-item"><input type="checkbox" name="gallery"> Галерея</li>
-          <li class="filter-features-item"><input type="checkbox" name="basket"> Корзина</li>
-        </ul>
+        </fieldset>
 
-        <button class="filter-submit">Показать</button>
+        <button type="submit" class="filter-submit">Показать</button>
+
       </section>
 
       <h2 class="sort-title">Сортировать:</h2>
       <ul class="sort-list">
-        <li class="sort-list-item">По цене</li>
-        <li class="sort-list-item">По типу</li>
-        <li class="sort-list-item">Ао названию</li>
+        <li class="sort-list-item">
+          <button>По цене</button>
+        </li>
+        <li class="sort-list-item">
+          <button>По типу</button> 
+        </li>
+        <li class="sort-list-item">
+          <button>По названию</button>
+        </li>
       </ul>
 
       <section class="themes">
@@ -68,7 +115,7 @@
 
           <li class="themes-list-item">
             <a href="sedona.jpeg">
-            <img src="img/img-sedona.jpg" alt="sedona theme">
+            <img src="img/img-sedona.jpg" width="360" height="617" alt="sedona theme">
               <section class="themes-hover">
                 <h3 class="themes-hover-title">Sedona</h3>
                 <p class="themes-hover-text">Информационный сайт для туристов</p>
@@ -79,7 +126,7 @@
 
           <li class="themes-list-item">
             <a href="pink.jpeg">
-            <img src="img/img-pink.jpg" alt="pink theme">
+            <img src="img/img-pink.jpg" width="360" height="617" alt="pink theme">
             <section class="themes-hover">
                 <h3 class="themes-hover-title">Pink app</h3>
                 <p class="themes-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
@@ -90,7 +137,7 @@
 
           <li class="themes-list-item">
             <a href="borodinsky.jpeg">
-            <img src="img/img-barbershop.jpg" alt="borodinsky theme">
+            <img src="img/img-barbershop.jpg" width="360" height="617" alt="borodinsky theme">
               <section class="themes-hover">
                 <h3 class="themes-hover-title">Barbershop</h3>
                 <p class="themes-hover-text">Сайт салона красоты. Для мужчин, да.</p>
@@ -101,7 +148,7 @@
 
           <li class="themes-list-item">
             <a href="mishka.jpeg">
-            <img src="img/img-mishka.jpg" alt="mishla theme">
+            <img src="img/img-mishka.jpg" width="360" height="617" alt="mishla theme">
               <section class="themes-hover">
                 <h3 class="themes-hover-title">Mishka</h3>
                 <p class="themes-hover-text">Интернет–магазин вязаных игрушек</p>
@@ -112,7 +159,7 @@
 
           <li class="themes-list-item">
             <a href="A+.jpeg">
-            <img src="img/img-aplus.jpg" alt="A+ theme">
+            <img src="img/img-aplus.jpg" width="360" height="617" alt="A+ theme">
               <section class="themes-hover">
                 <h3 class="themes-hover-title">A plus</h3>
                 <p class="themes-hover-text">Лендинг курсов повышения квалификации</p>
@@ -123,7 +170,7 @@
         
           <li class="themes-list-item">
             <a href="kvast.jpeg">
-            <img src="img/img-kvast.jpg" alt="kvast theme">
+            <img src="img/img-kvast.jpg" width="360" height="617" alt="kvast theme">
               <section class="themes-hover">
                 <h3 class="themes-hover-title">Кваст</h3>
                 <p class="themes-hover-text">Промо–сайт производителя крафтового кваса</p>
@@ -137,19 +184,19 @@
         <ul class="themes-list-navigation">
 
           <li class="themes-list-navigation-item">
-            <a class="themes-page">1</a>
+            <a class="themes-page" href="page-1.html">1</a>
           </li>
           
           <li class="themes-list-navigation-item">
-            <a class="themes-page">2</a>
+            <a class="themes-page" href="page-2.html">2</a>
           </li>
           
           <li class="themes-list-navigation-item">
-            <a class="themes-page">3</a>
+            <a class="themes-page" href="page-3.html">3</a>
           </li>
 
           <li class="themes-list-navigation-item">
-            <a class="themes-page">Следующая</a>
+            <a class="themes-page" href="next-page.html">Следующая</a>
           </li>
 
          </ul> 
@@ -183,16 +230,20 @@
         <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
       </section>
 
-      <section class="contact-form">
+      <form class="contact-form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="contact-form-title">Напишите нам</h2>
-          <h3 class="contact-form-name">Ваше имя:</h3>
-            <input class="name" type="text" name="Имя Фамилия">
-           <h3 class="contact-form-email">Ваш email:</h3> 
-            <input class="email" type="text" name="email@example.com">
-          <h3 class="contact-form-text">Текст письма:</h3>
-            <input class="text" type="text" name="В свободной форме">
-          <button class="contact-form-submit">Отправить</button>
-      </section>
+
+          <label for="name" class="contact-form-name">Ваше имя:</label>
+            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
+
+           <label for="email" class="contact-form-email">Ваш email:</label>
+            <input id="email" type="text" name="ваш email" placeholder="email@example.com">
+
+          <label for="email-text" class="contact-form-text">Текст письма:</label>
+            <input id="email-text" type="text" name="текст письма" placeholder="В свободной форме">
+
+          <button type="submit" class="contact-form-submit">Отправить</button>
+      </form>
 
     </footer>
   </body>

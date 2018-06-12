@@ -10,7 +10,7 @@
 
   		<nav class="main-navigation">
 
-        <a><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt=logo></a>
+        <a><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt="logo"></a>
 
   			<ul class="site-navigation">
   				<li class="site-navigation-item"><a href="studio.html">Студия</a></li>
@@ -52,6 +52,10 @@
 
   		</ul>
 
+      <button class="change-slide" type="button" name="сменить слайд-1"></button>
+      <button class="change-slide" type="button" name="сменить слайд-2"></button>
+      <button class="change-slide" type="button" name="сменить слайд-3"></button>
+
   		<h2 class="visually-hidden">Услуги</h2>
 
   		<section class="Services">
@@ -59,21 +63,24 @@
   			<ul class="services-list">
 
   				<li class="service-item sevice-item-website">
+            <img src="img/illustration-1.png" width="303" height="148" alt="service website">
   					<h3 class="service-title">Веб-сайты</h3>
   					<p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-  					<button class="make-order make-order-website">Заказать</button>
+  					<a href="#" class="make-order make-order-website">Заказать</a>
   				</li>
 
   				<li class="service-item service-item-app">
+            <img src="img/illustration-2.png" width="303" height="148" alt="service app">
             <h3 class="service-title">Приложения</h3>
   					<p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
-  					<button class="make-order make-order-app">Заказать</button>
+  					<a href="#" class="make-order make-order-app">Заказать</a>
   				</li>
 
   				<li class="service-item service-item-presentation">
+            <img src="img/illustration-3.png" width="303" height="148" alt="service presentation">
             <h3 class="service-title">Презентации</h3>
   					<p class="service-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-  					<button class="make-order make-order-presentation">Заказать</button>
+  					<a href="#" class="make-order make-order-presentation">Заказать</a>
   				</li>
 
   			</ul>
@@ -92,7 +99,7 @@
   				</ul>
   		</div>
 
-  		<img class="nerds-logo" src="img/nerds-illustration.png" width="358" height="209" alt="Логотип">
+  		<img class="nerds-logo" src="img/nerds-illustration.png" width="358" height="209" alt="логотип">
   		<p>С 2004 года любим точность во всём:</p>
   		<table class="numeric-data">
   			<tr>
@@ -103,7 +110,7 @@
   			<tr>
   				<td>Уровень самоотдачи</td>
   				<td>Соблюдение сроков</td>
-  				<td>Милимальная предоплата</td>
+  				<td>Минимальная предоплата</td>
   			</tr>
   		</table>
 
@@ -113,12 +120,12 @@
 
   			<ul class="clients-list">
           <li class="clients-list-item"> <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="client-item" src="img/logo-1.png" width="202" height="69" alt="img-html-academy"></a>
+          <img class="client-item" src="img/logo-1.png" width="209" height="101" alt="logo-html-academy"></a>
 
-  			 <li class="clients-list-item"><img  class="client-item" src="img/logo-2.png"  width="206" height="89" alt="img-borodinsky"></li>
+  			 <li class="clients-list-item"><img  class="client-item" src="img/logo-2.png"  width="209" height="101" alt="logo-borodinsky"></li>
   			 
-         <li class="clients-list-item"><img class="client-item" src="img/logo-3.png" width="185" height="54" alt="img-pink"></li>
-  			 <li class="clients-list-item"><img class="client-item" src="img/logo-4.png" width="173" height="83" alt="img-mishka"></li>
+         <li class="clients-list-item"><img class="client-item" src="img/logo-3.png" width="209" height="101" alt="logo-pink"></li>
+  			 <li class="clients-list-item"><img class="client-item" src="img/logo-4.png" width="209" height="101" alt="logo-mishka"></li>
         </ul>
   		</section>
 
@@ -132,10 +139,13 @@
   			<p>191186 Санкт–Петербург,<br>
   			ул. Б.Конюшенная, д. 19/8</p>
   			<p>тел. +7(812)275–75–75</p>
-  			<a class="button" href="contact-form"><span>Напишите нам</span></a>
+  			
+        <button class="write-us" type="button">Напишите нам</button>
+        
   			<span class="map">
-  				<a href="map.html"><img src="img/map.png" alt="map"></a>
+  				<a href="map.html"><img src="img/map.png" alt="map">
   			</span>
+        </a>
   		</section>
   	
   	
@@ -151,16 +161,20 @@
   			<p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
   		</section>
 
-      <section class="contact-form">
+      <form class="contact-form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="contact-form-title">Напишите нам</h2>
-          <h3 class="contact-form-name">Ваше имя:</h3>
-            <input class="name" type="text" name="Имя Фамилия">
-           <h3 class="contact-form-email">Ваш email:</h3> 
-            <input class="email" type="text" name="email@example.com">
-          <h3 class="contact-form-text">Текст письма:</h3>
-            <input class="text" type="text" name="В свободной форме">
-          <button class="contact-form-submit">Отправить</button>
-      </section>
+
+          <label for="name" class="contact-form-name">Ваше имя:</label>
+            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
+
+           <label for="email" class="contact-form-email">Ваш email:</label>
+            <input id="email" type="text" name="ваш email" placeholder="email@example.com">
+
+          <label for="email-text" class="contact-form-text">Текст письма:</label>
+            <input id="email-text" type="text" name="текст письма" placeholder="В свободной форме">
+
+          <button type="submit" class="contact-form-submit">Отправить</button>
+      </form>
 
   	</footer>
 
