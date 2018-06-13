@@ -14,7 +14,7 @@
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="studio.html">Студия</a></li>
           <li class="site-navigation-item"><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
           <li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
         </ul>
 
@@ -27,7 +27,7 @@
   	<main>
       <h1 class="main-title">Магазин готовых шаблонов</h1>
 
-      <section class="filter">
+      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
 
         <h2 class="filter-price-title">Стоимость:</h2>
 
@@ -49,7 +49,7 @@
           <ul class="filter-grid-list">
             <li class="filter-grid-item">
               <input id="filter-adaptive-grid" type="radio" name="adaptive-grid" checked>
-              <label for="adaptive-grid">Адаптивная</label>
+              <label for="filter-adaptive-grid">Адаптивная</label>
             </li>  
             <li class="filter-grid-item">
               <input id="filter-fixed-grid" type="radio" name="fixed-grid">
@@ -74,7 +74,7 @@
             </li>
             <li class="filter-features-item">
               <input id="advantages-section-feature" type="checkbox" name="advantages section">
-              <label for="advantges-section-feature">Блок преимуществ</label>
+              <label for="advantages-section-feature">Блок преимуществ</label>
             </li>
             <li class="filter-features-item">
               <input id="news-feature" type="checkbox" name="news" checked>
@@ -94,7 +94,7 @@
 
         <button type="submit" class="filter-submit">Показать</button>
 
-      </section>
+      </form>
 
       <h2 class="sort-title">Сортировать:</h2>
       <ul class="sort-list">
