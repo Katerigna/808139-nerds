@@ -48,16 +48,16 @@
         
           <ul class="filter-grid-list">
             <li class="filter-grid-item">
-              <input id="filter-adaptive-grid" type="radio" name="adaptive-grid" checked>
+              <input id="filter-adaptive-grid" type="radio" name="grid-choice" value="adaptive-grid" checked>
               <label for="filter-adaptive-grid">Адаптивная</label>
             </li>  
             <li class="filter-grid-item">
-              <input id="filter-fixed-grid" type="radio" name="fixed-grid">
-              <label for="fixed-grid">Фиксированная</label>
+              <input id="filter-fixed-grid" type="radio" name="grid-choice" value="fixed-grid">
+              <label for="filter-fixed-grid">Фиксированная</label>
             </li> 
             <li class="filter-grid-item">
-              <input id="filter-elstic-grid" type="radio" name="elastic-grid">
-              <label for="elastic-grid">Резиновая</label>
+              <input id="filter-elastic-grid" type="radio" name="grid-choice" value="elastic-grid">
+              <label for="filter-elastic-grid">Резиновая</label>
             </li>         
           </ul>
 
@@ -237,10 +237,10 @@
             <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
 
            <label for="email" class="contact-form-email">Ваш email:</label>
-            <input id="email" type="text" name="ваш email" placeholder="email@example.com">
+            <input id="email" type="text" name="email" placeholder="email@example.com">
 
           <label for="email-text" class="contact-form-text">Текст письма:</label>
-            <input id="email-text" type="text" name="текст письма" placeholder="В свободной форме">
+            <textarea id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea>
 
           <button type="submit" class="contact-form-submit">Отправить</button>
       </form>
