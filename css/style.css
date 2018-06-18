@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto Regular", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -31,7 +31,7 @@ a {
 
 .slider-title {
 	font-size: 55px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 55px;
 }
 
@@ -48,7 +48,7 @@ a {
 .services-list h3 {
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: 900;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -57,27 +57,27 @@ a {
 	background-color: #fb565a;
 	line-height: 18px;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .about-us-title {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .order-title {
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .numeric-data-title {
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .numbers {
 	font-size: 45px;
 	line-height: 10px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .numbers-title {
@@ -88,7 +88,7 @@ a {
 .contacts h3 {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .contacts p {
@@ -98,7 +98,7 @@ a {
 
 .write-us {
 	line-height: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #fb565a;
@@ -107,7 +107,7 @@ a {
 .promo-title {
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .promo-text {
@@ -118,12 +118,12 @@ a {
 .contact-form-title {
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .contact-form label {
 	line-height: 18px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .contact-text {
@@ -131,10 +131,16 @@ a {
 	color: #444444;
 }
 
+.main-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+}
+
 .filter-title {
 	font-size: 18px;
 	line-height: 30px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .slider-item {
@@ -144,7 +150,18 @@ a {
 .sort-title {
 	font-size: 18px;
 	line-height: 18px;
-	font-weight: 900;
+	font-weight: 700;
+}
+
+.price {
+	line-height: 22px;
+	color: #283136;
+}
+
+.filter-grid-list label,
+.filer-features-list label {
+	line-height: 20px;
+	color: #283136;
 }
 
 .sort-list-item {
@@ -156,9 +173,22 @@ a {
 .themes-page {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	background-color: #eeeeee;
 }
+
+.themes-hover-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.themes-hover-text {
+	line-height: 18px;
+	color: #666666;
+}
+
+
 
 .slider-item-first {
 	background-image: url("../img/slide1.png");
@@ -176,6 +206,10 @@ a {
 	background-image: url("../img/slide3.png");
 	background-position: right;
 	background-repeat: no-repeat;
+}
+
+.themes-hover {
+	background-color: #e1e1e1;
 }
 
 .site-navigation {
@@ -198,6 +232,43 @@ a {
 	list-style: none;
 }
 
+.themes-list {
+	list-style: none;
+}
+
+.social-networks-list {
+	list-style: none;
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fb565a;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.order-app {
+	background-color: #00ca74;
+}
+
+.order-presentation {
+	background-color: #efc849;
+}
+
+.slider-button a:hover {
+	background-color: #e74246;
+}
+
+.slider-button a:active {
+	background-color: #d7373b;
+}
+
+.social-networks-list a {
+	background-color: #e1e1e1;
+}
 .logo:hover {
 	opacity: 0.8;
 }
@@ -211,12 +282,12 @@ a {
 	color: #fb565a
 }
 
-site-navigation a:active,
+.site-navigation a:active,
 .basket:active {
 	color: rgba(0, 0, 0, 0.3)
 }
 
-site-navigation a:visited
+.site-navigation a:visited,
 .basket:visited {
 	border-bottom: 2px solid #fb565a;
 }
@@ -233,14 +304,14 @@ site-navigation a:visited
 	opacity: 0.1;
 }
 
-.sort-list-item button {
+.sort-list-item a {
 	opacity: 0.3;
 }
 
-.sort-list-item button:hover {
+.sort-list-item a:hover {
 	opacity: 0.6;
 }
 
-.sort-list-item button:active {
+.sort-list-item a:active {
 	opacity: 1;
 }
