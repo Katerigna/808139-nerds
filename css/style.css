@@ -242,27 +242,53 @@ a {
 
 .button {
   font: inherit;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   background-color: #fb565a;
   color: #ffffff;
   border: none;
   outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:active {
+	background-color: #d7373b;
 }
 
 .order-app {
 	background-color: #00ca74;
 }
 
+.order-app:hover {
+	background-color: #00bc6c;
+}
+
+.order-app:active {
+	color: rgba(255,255,255, 0.3);
+	background-color: #00aa62;
+}
+
 .order-presentation {
 	background-color: #efc849;
 }
 
-.slider-button a:hover {
-	background-color: #e74246;
+.order-presentation:hover {
+	background-color: #eab534;
 }
 
-.slider-button a:active {
+.order-presentation:active {
+	color: rgba(255,255,255, 0.3);
+	background-color: #e5a722;
+}
+
+.slider-button:active {
+	color: rgba(255,255,255, 0.3);
 	background-color: #d7373b;
 }
 
