@@ -9,8 +9,18 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 header {
 	background-color: #eeeeee;
+	width: 1180px;
+	min-height: 132px;
 }
 
 a {
@@ -341,4 +351,47 @@ a {
 
 .sort-list-item a:active {
 	opacity: 1;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: space-around;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation-item {
+	margin: 0 50px;
+}
+
+.top-section {
+	min-height: 430px;
+}
+
+.services-list {
+	width: 1110px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about-us {
+	display: flex;
+}
+
+.service-item {
+	width: 300px;
+	min-height: 348px;
+}
+
+.clients-list {
+	display: flex;
+}
+
+.social-networks {
+	display: flex;
+	justify-content: space-around;
 }
