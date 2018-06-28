@@ -17,9 +17,9 @@ body {
   margin: -1px;
 }
 
-header {
+.menu {
 	background-color: #eeeeee;
-	width: 1180px;
+	width: 100%;
 	min-height: 132px;
 }
 
@@ -31,8 +31,12 @@ a {
 .main-navigation {
 	line-height: 30px;
 	text-transform: uppercase;
+	width: 1160px;
+	margin: 0 auto;
+}
 
-	background-color: #eeeeee;
+.navigation-wrap {
+	width: 440px;
 }
 
 .inner-top {
@@ -354,13 +358,14 @@ a {
 }
 
 .main-navigation {
+	padding-top: 50px;
 	display: flex;
 	justify-content: space-around;
 }
 
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .site-navigation-item {
@@ -368,7 +373,12 @@ a {
 }
 
 .top-section {
+	width: 1129px;
 	min-height: 430px;
+}
+
+.slider-title {
+	width: 380px;
 }
 
 .services-list {
@@ -394,4 +404,10 @@ a {
 .social-networks {
 	display: flex;
 	justify-content: space-around;
+}
+
+.main-title {
+	width: 750px;
+	margin: 0 auto;
+	padding-bottom: 117px;
 }

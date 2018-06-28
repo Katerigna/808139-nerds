@@ -9,11 +9,13 @@
   </head>
   <body>
 
-  	<header>
+  	<header class="menu">
 
   		<nav class="main-navigation">
 
         <a><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt="logo"></a>
+
+        <div class="navigation-wrap">
 
   			<ul class="site-navigation">
   				<li class="site-navigation-item"><a href="studio.html">Студия</a></li>
@@ -21,6 +23,8 @@
   				<li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
   				<li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
   			</ul>
+
+      </div>
 
         <a class="basket" href="basket.html">Корзина</a>
 
@@ -179,13 +183,13 @@
         <h2 class="contact-form-title">Напишите нам</h2>
 
           <label for="name" class="contact-form-name">Ваше имя:</label>
-            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
+            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия"><br>
 
            <label for="email" class="contact-form-email">Ваш email:</label>
-            <input id="email" type="text" name="email" placeholder="email@example.com">
+            <input id="email" type="text" name="email" placeholder="email@example.com"><br>
 
           <label for="email-text" class="contact-form-text">Текст письма:</label>
-            <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea>
+            <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea><br>
 
           <button type="submit" class="button contact-form-submit">Отправить</button>
       </form>
