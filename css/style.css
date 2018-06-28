@@ -411,3 +411,8 @@ a {
 	margin: 0 auto;
 	padding-bottom: 117px;
 }
+
+.main-section {
+	width: 1160px;
+	display: flex;
+}
