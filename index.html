@@ -9,13 +9,11 @@
   </head>
   <body>
 
-  	<header class="menu">
+  	<header class="header">
 
   		<nav class="main-navigation">
 
         <a><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt="logo"></a>
-
-        <div class="navigation-wrap">
 
   			<ul class="site-navigation">
   				<li class="site-navigation-item"><a href="studio.html">Студия</a></li>
@@ -23,8 +21,6 @@
   				<li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
   				<li class="site-navigation-item"><a href="contacts.html">Контакты</a></li>
   			</ul>
-
-      </div>
 
         <a class="basket" href="basket.html">Корзина</a>
 
@@ -70,28 +66,28 @@
       
     </div>
 
-  		<h2 class="visually-hidden">Услуги</h2>
-
   		<section class="services">
+
+        <h2 class="visually-hidden">Услуги</h2>
 
   			<ul class="services-list">
 
   				<li class="service-item sevice-item-website">
-            <img src="img/illustration-1.png" width="303" height="148" alt="service website">
+            <img src="img/illustration-1.png" width="300" height="148" alt="service website">
   					<h3 class="service-title">Веб-сайты</h3>
   					<p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
   					<a href="#" class="button order-button order-website">Заказать</a>
   				</li>
 
   				<li class="service-item service-item-app">
-            <img src="img/illustration-2.png" width="303" height="148" alt="service app">
+            <img src="img/illustration-2.png" width="300" height="148" alt="service app">
             <h3 class="service-title">Приложения</h3>
   					<p class="service-description">Покорите топ-10 приложений в AppStore и Google Play</p>
   					<a href="#" class="button order-button order-app">Заказать</a>
   				</li>
 
   				<li class="service-item service-item-presentation">
-            <img src="img/illustration-3.png" width="303" height="148" alt="service presentation">
+            <img src="img/illustration-3.png" width="300" height="148" alt="service presentation">
             <h3 class="service-title">Презентации</h3>
   					<p class="service-description">Вы даже не подозреваете, насколько вы изумительны!</p>
   					<a href="#" class="button order-button order-presentation">Заказать</a>
@@ -103,9 +99,9 @@
   		<h2 class="visually-hidden">Студия</h2>
 
   		<div class="about-us">
-        <div class="about-us-column">
+        <div class="about-us-text">
   			 <b class="about-us-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-  			 <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+  			 <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
   			 <p class="order-title">Выполняем заказы на разработку:</p>
   				<ul class="order-list">
   					<li class="order-list-item">Веб–сайтов любой сложности</li>
@@ -114,11 +110,12 @@
   				</ul>
   		  </div>
 
-  		  <div class="about-us-column">
+  		  <div class="about-us-picture">
         <img class="nerds-logo" src="img/nerds-illustration.png" width="358" height="209" alt="логотип">
-  		  <p class="numeric-data-title">С 2004 года любим точность во всём:</p>
+  		  
   		  <table class="numeric-data">
-  			<tr>
+          <caption class="numeric-data-title">С 2004 года любим точность во всём:</caption>
+  			 <tr>
   				<td class="numbers">146<sup>%</sup></td>
   				<td class="numbers">100<sup>%</sup></td>
   				<td class="numbers">50<sup>%</sup></td>
@@ -132,9 +129,9 @@
         </div>
       </div>
 
-  		<h2 class="visually-hidden">Клиенты</h2>
-
   		<section class="clients">
+
+        <h2 class="visually-hidden">Клиенты</h2>
 
   			<ul class="clients-list">
           <li class="clients-list-item"> <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -152,11 +149,11 @@
 	<footer>
   		<h2 class="visually-hidden">Контакты</h2>
 
-  		<section class="contacts">
+  		<section class="contact-data">
   			<h3 class="contacts">Nerds design studio</h3>
-  			<p>191186 Санкт–Петербург,<br>
+  			<p class="address">191186 Санкт–Петербург,<br>
   			ул. Б.Конюшенная, д. 19/8</p>
-  			<p>тел. +7(812)275–75–75</p>
+  			<p class="phone">тел. +7(812)275–75–75</p>
   			
         <button class="button write-us" type="button">Напишите нам</button>
         
@@ -175,21 +172,23 @@
   				<li class="social-networks-item"><a class="social-button" href="instagram.com"><img src="img/insta-icon.svg" alt="imstagram"></a><li>
   			</ul>
 
-  			<h3 class="promo-title">Давайте дружить, это выгодно!</h3>
-  			<p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="promo-wrap">
+  			 <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
+  			 <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
   		</section>
 
       <form class="contact-form" method="post" action="https://echo.htmlacademy.ru">
         <h2 class="contact-form-title">Напишите нам</h2>
-
+          
           <label for="name" class="contact-form-name">Ваше имя:</label>
-            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия"><br>
+            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
 
            <label for="email" class="contact-form-email">Ваш email:</label>
-            <input id="email" type="text" name="email" placeholder="email@example.com"><br>
+            <input id="email" type="text" name="email" placeholder="email@example.com">
 
           <label for="email-text" class="contact-form-text">Текст письма:</label>
-            <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea><br>
+            <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea>
 
           <button type="submit" class="button contact-form-submit">Отправить</button>
       </form>
