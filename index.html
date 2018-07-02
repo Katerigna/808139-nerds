@@ -133,6 +133,8 @@
 
         <h2 class="visually-hidden">Клиенты</h2>
 
+        <div class="clients-wrap">
+
   			<ul class="clients-list">
           <li class="clients-list-item"> <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img class="client-item" src="img/logo-htmlacademy.png" width="209" height="101" alt="logo-html-academy"></a>
@@ -142,6 +144,7 @@
          <li class="clients-list-item"><img class="client-item" src="img/logo-pink.png" width="209" height="101" alt="logo-pink"></li>
   			 <li class="clients-list-item"><img class="client-item" src="img/logo-mishka.png" width="209" height="101" alt="logo-mishka"></li>
         </ul>
+      </div>
   		</section>
 
 	</main>
@@ -184,19 +187,30 @@
         <h2 class="contact-form-title">Напишите нам</h2>
 
           <div class="name-email-wrap">
-          
-          <label for="name" class="contact-form-name">Ваше имя:</label>
-            <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
 
-           <label for="email" class="contact-form-email">Ваш email:</label>
-            <input id="email" type="text" name="email" placeholder="email@example.com">
+            <div class="input-wrap">
+              <label for="name" class="contact-form-name">Ваше имя:<br></label>
+              <input id="name" type="text" name="ваше имя" placeholder="Имя Фамилия">
+            </div>
+          
+          
+
+            <div class="input-wrap">
+              <label for="email" class="contact-form-email">Ваш email:<br></label>
+              <input id="email" type="text" name="email" placeholder="email@example.com">
+            </div>
+
+           
 
           </div>
 
-          <label for="email-text" class="contact-form-text">Текст письма:</label>
+          <div class="form-text-wrap">
+
+          <label for="email-text" class="contact-form-text">Текст письма:<br></label>
             <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea>
 
           <button type="submit" class="button contact-form-submit">Отправить</button>
+          </div>
 
           </div>
       </form>

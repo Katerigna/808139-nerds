@@ -22,6 +22,11 @@ body {
 	width: 100%;
 }
 
+.header-catalog {
+	padding: 0 0 117px 0;
+	margin: 0 0 60px 0;
+}
+
 a {
 	text-decoration: none;
 	color: #000000;
@@ -56,9 +61,12 @@ a {
 }
 
 .top-section {
-	display: none;
+	
 	width: 1129px;
 	min-height: 430px;
+
+	position: relative;
+	
 }
 
 .slider {
@@ -91,7 +99,20 @@ a {
 	width: 1160px;
 	margin: 0 auto 40px auto;
 	padding: 0 20px 80px 20px;
-	border-bottom: 2px solid #eeeeee;
+	
+	position: relative;
+}
+
+.services::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 1160px;
+	margin: 0 20px;
+	height: 2px;
+	background-color: #eeeeee;
 }
 
 .services-list {
@@ -143,7 +164,20 @@ a {
 	width: 1160px;
 	margin: 0 auto 46px auto;
 	padding: 0 20px 75px 20px;
-	border-bottom: 2px solid #eeeeee;
+	
+	position: relative;
+}
+
+.about-us::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 1160px;
+	margin: 0 20px;
+	height: 2px;
+	background-color: #eeeeee;
 }
 
 .about-us-title {
@@ -215,22 +249,38 @@ caption {
 }
 
 .clients {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	width: 1160;
-	
+
+	width: 1160px;
+
+	position: relative;	
 }
 
+.clients-wrap{
+	width: 100%;
+	margin: 0 36px;
+}	
+	
 .clients-list {
 	list-style: none;
 
-	margin: 0 auto 80px auto;
-	padding: 0 0 45px 0;
+	padding: 0 0 50px 0;
 	width: 1088px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	
+}
 
-	border-bottom: 2px solid #eeeeee;
+.clients::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 1160px;
+	margin: 0;
+	height: 2px;
+	background-color: #eeeeee;
 }
 
 .contact-data {
@@ -311,7 +361,9 @@ caption {
 }
 
 .contact-form {
-	width: 960px;
+	width: 760px;
+	padding: 80px 100px 84px 100px;
+	margin: 0 auto;
 
 	display: flex;
 	flex-direction: column;
@@ -330,7 +382,7 @@ caption {
 	line-height: 45px;
 	font-weight: 500;
 
-	margin: 0;
+	margin: 0 0 50px 0;
 	padding: 0;
 }
 
@@ -343,14 +395,24 @@ caption {
 .contact-text {
 	line-height: 18px;
 	color: #444444;
+
+	margin: 0 0 47px 0;
 }
 
-.inner-top {
-	width: 100%
-	margin: 0 0 117px 0;
-
-	background-color: #eeeeee;
+.input-wrap {
+	width: 360px;
+	margin: 0 0 35px 0;
 }
+
+.form-text-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form-submit {
+	width: 260px;
+}
+
 
 .main-title {
 	font-size: 55px;
@@ -366,8 +428,8 @@ caption {
 	width: 1160px;
 	display: flex;
 	justify-content: space-between;
-	padding: 0;
-	margin: 0 20px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 .filter {
@@ -378,6 +440,7 @@ caption {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+	text-transform: uppercase;
 
 	padding: 0;
 	margin: 0;
@@ -464,6 +527,7 @@ caption {
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
+	text-transform: uppercase;
 
 	margin: 0;
 	padding: 0;
@@ -471,7 +535,9 @@ caption {
 
 .sort-list {
 	list-style: none;
+	display: flex;
 
+	width: 480px;
 	margin: 0;
 	padding: 0;
 }
@@ -479,15 +545,17 @@ caption {
 .sort-list-item {
 	font-size: 14px;
 	line-height: 18px;
+	margin: 0 25px 0 0;
+}
+
+.sort-list-item a {
+	text-transform: uppercase;
 }
 
 .sort-menu {
 	display: flex;
+	justify-content: space-between;
 	margin: 0 0 60px 0;
-}
-
-.sort-menu-items {
-	display: flex;
 }
 
 .themes-list {
@@ -510,6 +578,7 @@ caption {
 
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .themes-hover-title {
@@ -527,6 +596,7 @@ caption {
 	color: #666666;
 	text-align: center;
 
+	width: 240px;
 	margin: 0 0 30px 0;
 	padding: 0;
 }
@@ -549,9 +619,13 @@ caption {
 
 
 
+.slider-item {
+	display: none;
+}
 
-
-
+.slider-item:nth-child(1) {
+	display: block;
+}
 
 
 
@@ -688,7 +762,10 @@ caption {
 	opacity: 1;
 }
 
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 
