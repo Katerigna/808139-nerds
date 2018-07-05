@@ -43,17 +43,16 @@
         <h2 class="filter-title filter-price-title">Стоимость:</h2>
 
         <div class="price-range">
-          <button type="button" class="filter-price-range" name="minimal-price"></button>
-          <button type="button" class="filter-price-range" name="maximal-price"></button>
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
         </div>
 
         <div class="price-range-wrap">
-          <label class="price" for="minimal-price">от
-          <input id="minimal-price" type="number" name="min price" value="0" max="15000"> 
-          </label>
-          <label class="price" for="maximal-price">до
-          <input id="maximal-price" type="number" name="max price" value="15000" max="15000"> 
-          </label>
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
         </div>
 
         <fieldset class="filtering filtering-grid">
@@ -127,7 +126,7 @@
           </ul>
 
           <ul class="icons-dir">
-            <li">
+            <li>
               <a  class="icon-down" href="#"></a>
             </li>
             <li>

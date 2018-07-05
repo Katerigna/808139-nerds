@@ -700,7 +700,7 @@ caption {
 	position: relative;
 }
 
-.icon-down::before {
+.icon-down::after {
 	display: block;
 	position: absolute;
 	content: '';
