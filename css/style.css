@@ -575,19 +575,99 @@ caption {
 	text-transform: uppercase;
 
 	padding: 0;
-	margin: 0;
+	margin: 0 0 20px 0;
 }
 
 .filter-price-title {
 	margin: 0 0 56px 0;
 }
 
+.filter-item {
+	margin: 0;
+  	padding: 0;
+  
+  	border: none;
+}
+
 .price-range {
 	margin: 0 0 14px 0;
+	padding: 39px 20px 0 20px;
+	
+	height: 41px;
+  	background-color: #f1f1f1;
+ 	border-radius: 5px;
+
+ 	position: relative;
+}
+
+.price-range .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+
+.price-range .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.price-range .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  cursor: pointer;
+}
+
+.price-range .toggle-min {
+  left: 18px;
+}
+
+.price-range .toggle-max {
+  left: 160px;
 }
 
 .price-range-wrap {
 	margin: 0 0 60px 0;
+	font-size: 0;
+}
+
+.price-range-wrap label {
+	display: inline-block;
+  	width: 50%;
+
+  	font-size: 16px;
+  	text-transform: uppercase;
+}
+
+.price-range-wrap input {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  width: 60px;
+  padding: 8px 10px;
+  margin: 0 0 0 10px;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .price {
@@ -595,9 +675,6 @@ caption {
 	color: #283136;
 }
 
-.filter-title {
-	margin: 0 0 20px 0;
-}
 
 .filtering {
 	margin: 0;
@@ -704,14 +781,29 @@ caption {
 	display: block;
 	position: absolute;
 	content: '';
-	top: 0;
-	left: 0;
+	top: -15px;
+	left: 320px;
 
 	width: 11px;
 	height: 12px;
 	background: url('../img/icon-down-dir.svg') no-repeat;
 }
 
+.icon-up {
+	position: relative;
+}
+
+.icon-up::after {
+	display: block;
+	position: absolute;
+	content: '';
+	top: -15px;
+	left: 350px;
+
+	width: 11px;
+	height: 12px;
+	background: url('../img/icon-up-dir.svg') no-repeat;
+}
 
 .themes-list {
 	list-style: none;
@@ -798,7 +890,7 @@ caption {
 	opacity: 0.12;
 }
 
-.themes-list-item::before:hover {
+.themes-list-item:hover::before {
 	opacity: 1;
 }
 
