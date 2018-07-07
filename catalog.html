@@ -10,7 +10,7 @@
   <body>
   	<header class="header header-catalog">
 
-      <nav class="main-navigation">
+      <nav class="main-navigation navigation-catalog">
 
         <a href="index.html"><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt=logo></a>
 
@@ -42,6 +42,8 @@
 
         <h2 class="filter-title filter-price-title">Стоимость:</h2>
 
+        <fieldset class="filter-item">
+
         <div class="price-range">
             <div class="scale">
               <div class="bar"></div>
@@ -54,21 +56,22 @@
             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
             <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
         </div>
+        </fieldset>
 
         <fieldset class="filtering filtering-grid">
           <legend class="filter-title filter-grid-title">Сетка:</legend>
         
           <ul class="filter-grid-list">
             <li class="filter-grid-item">
-              <input class="filter-grid-input" id="filter-adaptive-grid" type="radio" name="grid-choice" value="adaptive-grid" checked>
+              <input class="filter-grid-input visually-hidden" id="filter-adaptive-grid" type="radio" name="grid-choice" value="adaptive-grid" checked>
               <label for="filter-adaptive-grid">Адаптивная</label>
             </li>  
             <li class="filter-grid-item">
-              <input id="filter-fixed-grid" type="radio" name="grid-choice" value="fixed-grid">
+              <input class="filter-grid-input visually-hidden" id="filter-fixed-grid" type="radio" name="grid-choice" value="fixed-grid">
               <label for="filter-fixed-grid">Фиксированная</label>
             </li> 
             <li class="filter-grid-item">
-              <input id="filter-elastic-grid" type="radio" name="grid-choice" value="elastic-grid">
+              <input class="filter-grid-input visually-hidden" id="filter-elastic-grid" type="radio" name="grid-choice" value="elastic-grid">
               <label for="filter-elastic-grid">Резиновая</label>
             </li>         
           </ul>
@@ -81,23 +84,23 @@
         
           <ul class="filter-features-list">
             <li class="filter-features-item">
-              <input id="slider-feature" type="checkbox" name="slider" checked>
+              <input class="visually-hidden" id="slider-feature" type="checkbox" name="slider" checked>
               <label for="slider-feature">Слайдер</label>
             </li>
             <li class="filter-features-item">
-              <input id="advantages-section-feature" type="checkbox" name="advantages section">
+              <input  class="visually-hidden" id="advantages-section-feature" type="checkbox" name="advantages section">
               <label for="advantages-section-feature">Блок преимуществ</label>
             </li>
             <li class="filter-features-item">
-              <input id="news-feature" type="checkbox" name="news" checked>
+              <input  class="visually-hidden" id="news-feature" type="checkbox" name="news" checked>
               <label for="news-feature">Новости</label>
             </li>
             <li class="filter-features-item">
-              <input id="gallery-feature" type="checkbox" name="gallery">
+              <input  class="visually-hidden" id="gallery-feature" type="checkbox" name="gallery">
               <label for="gallery-feature">Галерея</label>
             </li>
             <li class="filter-features-item">
-              <input id="basket-feature" type="checkbox" name="basket">
+              <input  class="visually-hidden" id="basket-feature" type="checkbox" name="basket">
               <label for="basket-feature">Корзина</label>
             </li>
         </ul>
