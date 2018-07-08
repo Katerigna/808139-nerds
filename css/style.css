@@ -81,7 +81,7 @@ a {
 	display: block;
 }
 
-.site-navigation-link .active {
+.site-navigation-link.active {
 	border-bottom: 2px solid #fb565a;
 }
 
@@ -464,8 +464,8 @@ caption {
 	background-color: #cccccc;
 }
 
-.clients-list-item::after::nth-child(1){
-	margin: 0;
+.clients-list-item:nth-child(1)::after {
+	display: none;
 }
 
 .clients::after {
@@ -614,7 +614,7 @@ caption {
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
-.contact-form .hide {
+.contact-form.hide {
 	display: none;
 }
 
@@ -761,7 +761,7 @@ caption {
 }
 
 .price-range {
-	margin: 0 0 14px 0;
+	margin: 0 0 18px 0;
 	padding: 39px 20px 0 20px;
 	
 	height: 41px;
@@ -881,7 +881,7 @@ caption {
 
 
 .filter-radio {
-	margin: 0 0 18px 35px;
+	margin: 0 0 21px 35px;
 }
 
 .filter-radio label {
@@ -897,7 +897,7 @@ caption {
   	content: "";
   	position: absolute;
 
-  	top: 2px;
+  	top: -4px;
   	left: -34px;
 
   	width: 26px;
@@ -925,7 +925,7 @@ caption {
 }
 
 .filtering-grid {
-	margin: 0 0 30px 0;
+	margin: 0 0 19px 0;
 }
 
 .filtering-feature {
@@ -967,7 +967,7 @@ caption {
 	content: "";
   	position: absolute;
 
-  	top: 1px;
+  	top: 2px;
   	left: -34px;
 
   	width: 26px;
@@ -1177,6 +1177,7 @@ caption {
 }
 
 .themes-list-item img {
+	display: block;
 	border: 1px solid rgba(0,1,1,0.1);
 	padding: 1px 0 0 0; 
 }
@@ -1300,11 +1301,6 @@ caption {
 .site-navigation a:active,
 .basket:active {
 	color: rgba(0, 0, 0, 0.3);
-}
-
-.site-navigation a:visited,
-.basket:visited {
-	border-bottom: 2px solid #fb565a;
 }
 
 .client-item {
