@@ -620,8 +620,8 @@ caption {
 }
 
 .contact-form {
-  width: 760px;
-  padding: 80px 100px 84px 100px;
+  width: 960px;
+  padding: 0px 100px 0px 100px;
 
   display: flex;
   flex-direction: column;
@@ -635,15 +635,18 @@ caption {
   background-color: #fff;
 
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  box-sizing: border-box;
 }
 
-.contact-form .hide {
+.contact-form.hide {
   display: none;
 }
 
 .name-email-wrap {
   display: flex;
   justify-content: space-between;
+  margin: 0 0 28px 0;
 }
 
 .contact-form-title {
@@ -652,8 +655,8 @@ caption {
   font-weight: 500;
   color: #000;
 
-  margin: 0 0 38px 0;
-  padding: 0;
+  margin: 0 0 40px 0;
+  padding: 74px 0 0 0;
 
   position: relative;
 }
@@ -669,7 +672,10 @@ caption {
   height: 22px;
   background: url(../img/close-cross.svg) no-repeat;
   opacity: 0.3;
-  margin: 11px -13px;
+  margin: 69px -13px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .close-form:hover {
@@ -684,13 +690,15 @@ caption {
   line-height: 18px;
   font-weight: 700;
   color: #000;
+  display: block;
+  margin: 0 0 14px 0; 
 }
 
 .contact-text {
   line-height: 18px;
   color: #444444;
 
-  margin: 0 0 47px 0;
+  margin: 0 0 37px 0;
 
   width: 760px;
   height: 118px;
@@ -700,14 +708,16 @@ caption {
 
 .input-wrap {
   width: 360px;
-  margin: 0 0 35px 0;
+  margin: 0;
 }
 
 .input-wrap input {
   width: 360px;
-  height: 46px;
+  height: 50px;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  box-sizing: border-box;
+  padding: 5px 10px;
 }
 
 .input-wrap:hover input {
@@ -726,11 +736,17 @@ caption {
 .form-text-wrap {
   display: flex;
   flex-direction: column;
+  margin: 0 0 48px 0:;
+}
+
+.contact-form-text {
+  margin: 0 0 15px 0;
 }
 
 .contact-form-submit {
   width: 260px;
   padding: 13px 20px;
+  margin: 0 0 109px 0;
 }
 
 .main-title {
@@ -939,6 +955,10 @@ caption {
   background: url(../img/radio-on.svg) no-repeat;
 }
 
+.filter-radio-input:focus + label::before {
+  opacity: 1;
+}
+
 .filtering-grid {
   margin: 0 0 19px 0;
 }
@@ -950,6 +970,18 @@ caption {
 .filter-grid-list label,
 .filer-features-list label {
   line-height: 20px;
+}
+
+.filter-grid-list label:hover::before {
+  opacity: 1;
+}
+
+.filter-grid-list label:hover {
+  color: #000;
+}
+
+.filter-grid-list label:disabled {
+  opacity: 0.3;
 }
 
 .filter-checkbox label {
@@ -991,6 +1023,22 @@ caption {
   background: url(../img/checkbox-off.svg) no-repeat;
 }
 
+.filter-features-list label:hover {
+  color: #000;
+}
+
+.filter-features-list label:disabled {
+  opacity: 0.3;
+}
+
+.filter-features-list label:hover::before {
+  opacity: 1;
+}
+
+.filter-checkbox-input:focus + label::before {
+  opacity: 1;
+}
+
 .filter-submit,
 .themes-page {
   font-size: 16px;
@@ -1003,6 +1051,11 @@ caption {
 .filter-submit {
   width: 260px;
   padding: 16px 20px;
+}
+
+.filter-submit:focus {
+  color: #000000;
+  background-color: #dfdfdf;
 }
 
 .filter-submit:hover {
