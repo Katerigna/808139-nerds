@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -30,9 +30,6 @@ input[type="radio"].visually-hidden {
 .header {
   background-color: #eeeeee;
   width: 100%;
-}
-
-.header-catalog {
 }
 
 a {
@@ -84,6 +81,8 @@ a {
 .top-section {
   width: 100%;
   background-color: #eeeeee;
+
+  position: relative;
 }
 
 .slider {
@@ -92,14 +91,13 @@ a {
   width: 1160px;
   margin: 0 auto 80px auto;
   padding: 0 20px 0 20px;
-
-  position: relative;
 }
 
 .slider-title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
+  color: #000;
 
   max-width: 600px;
   margin: 0;
@@ -137,7 +135,7 @@ a {
   background-color: #eeeeee;
 }
 
-.slider-item:nth-child(3) {
+.slider-item:nth-child(1) {
   display: block;
 }
 
@@ -169,7 +167,7 @@ a {
   border-radius: 3px;
   outline: none;
   display: inline-block;
-  text-align: center;
+  vertical-align: top;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -201,6 +199,7 @@ a {
 
 .change-slide {
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -211,7 +210,30 @@ a {
 }
 
 .slider-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 104px;
+  z-index: 100;
+  
+  width: 160px;
+  height: 18px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls i {
+
   position: relative;
+  
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider-controls i::after {
@@ -231,6 +253,19 @@ a {
 }
 
 .slider-controls .active::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .services {
@@ -271,6 +306,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 16px 0;
+  color: #000;
 }
 
 .service-description {
@@ -324,6 +360,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000;
   margin: 0 0 33px 0;
   display: block;
 }
@@ -344,6 +381,7 @@ a {
 .order-title {
   text-transform: uppercase;
   font-weight: 700;
+  color: #000;
   margin: 0 0 24px 0;
 }
 
@@ -382,6 +420,7 @@ a {
 .numeric-data-title {
   text-transform: uppercase;
   font-weight: 700;
+  color: #000;
   margin: 0 0 38px 0;
   padding: 0;
 }
@@ -394,6 +433,7 @@ caption {
   font-size: 45px;
   line-height: 47px;
   font-weight: 700;
+  color: #000;
 }
 
 .numbers-title {
@@ -481,6 +521,7 @@ caption {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000;
 
   margin: 0 0 24px 0;
   padding: 0;
@@ -555,6 +596,7 @@ caption {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
+  color: #000;
 
   margin: 0 0 11px 0;
   padding: 0;
@@ -595,7 +637,7 @@ caption {
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
-.contact-form.hide {
+.contact-form .hide {
   display: none;
 }
 
@@ -608,6 +650,7 @@ caption {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: #000;
 
   margin: 0 0 38px 0;
   padding: 0;
@@ -640,6 +683,7 @@ caption {
 .contact-form label {
   line-height: 18px;
   font-weight: 700;
+  color: #000;
 }
 
 .contact-text {
@@ -693,6 +737,7 @@ caption {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: #000;
 
   display: block;
 
@@ -720,6 +765,7 @@ caption {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000;
 
   padding: 0;
   margin: 0 0 15px 0;
@@ -792,6 +838,7 @@ caption {
 
 .price-range-wrap label {
   display: inline-block;
+  vertical-align: baseline;
   width: 50%;
 
   font-size: 16px;
@@ -819,16 +866,12 @@ caption {
 
 .price {
   line-height: 22px;
-  color: #283136;
 }
 
 .filtering {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.filter-grid-title {
 }
 
 .filter-grid-list {
@@ -907,7 +950,6 @@ caption {
 .filter-grid-list label,
 .filer-features-list label {
   line-height: 20px;
-  color: #283136;
 }
 
 .filter-checkbox label {
@@ -984,6 +1026,7 @@ caption {
   line-height: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  content: #000;
 
   margin: 0;
   padding: 0;

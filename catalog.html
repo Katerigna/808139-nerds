@@ -9,58 +9,54 @@
   </head>
   <body>
   	<header class="header">
-
       <nav class="main-navigation navigation-catalog">
-
         <a href="index.html"><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt=logo></a>
 
         <div class="navigation-wrap">
-
           <ul class="site-navigation">
             <li class="site-navigation-item"><a class="site-navigation-link" href="studio.html">Студия</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link active" href="catalog.html">Магазин</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
           </ul>
-
         </div>
 
-      <a class="basket site-navigation-link" href="basket.html">Корзина</a>
-
+        <a class="basket site-navigation-link" href="basket.html">Корзина</a>
       </nav>
 
       <h1 class="main-title">Магазин готовых шаблонов</h1>
-
     </header>
 
     <main class="main-section">
-
       <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-
         <h2 class="filter-title filter-price-title">Стоимость:</h2>
 
         <fieldset class="filter-item">
-
-        <div class="price-range">
-          <div class="scale">
+          <div class="price-range">
+            <div class="scale">
               <div class="bar"></div>
             </div>
+
             <div class="toggle toggle-min"></div>
+
             <div class="toggle toggle-max"></div>
-        </div>
+          </div>
 
-        <div class="price-range-wrap">
-          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-        </div>
+          <div class="price-range-wrap">
+            <label class="min-price">от 
+              <input name="min-price" type="text" value="0">
+            </label>
 
+            <label class="max-price">до 
+              <input name="max-price" type="text" value="15000">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="filtering filtering-grid">
           <legend class="filter-title filter-grid-title">Сетка:</legend>
-        
-          <ul class="filter-grid-list">
 
+          <ul class="filter-grid-list">
             <li class="filter-radio">
               <input class="filter-radio-input visually-hidden" id="filter-adaptive-grid" type="radio" name="grid-choice" value="adaptive-grid" checked>
               <label for="filter-adaptive-grid">Адаптивная</label>
@@ -74,61 +70,51 @@
             <li class="filter-radio">
               <input class="filter-radio-input visually-hidden" id="filter-elastic-grid" type="radio" name="grid-choice" value="elastic-grid">
               <label for="filter-elastic-grid">Резиновая</label>
-            </li> 
-
+            </li>
           </ul>
-
         </fieldset>
 
         <fieldset class="filtering filtering-features">
 
         <legend class=" filter-title filter-features-title">Особенности:</legend>
-        
-          <ul class="filter-features-list">
 
-            <li class="filter-checkbox">
-              <input class="filter-checkbox-input visually-hidden" id="slider-feature" type="checkbox" name="slider" checked>
-              <label for="slider-feature">Слайдер</label>
-            </li>
+        <ul class="filter-features-list">
+          <li class="filter-checkbox">
+            <input class="filter-checkbox-input visually-hidden" id="slider-feature" type="checkbox" name="slider" checked>
+            <label for="slider-feature">Слайдер</label>
+          </li>
 
-            <li class="filter-checkbox">
-              <input  class="filter-checkbox-input visually-hidden" id="advantages-section-feature" type="checkbox" name="advantages section">
-              <label for="advantages-section-feature">Блок преимуществ</label>
-            </li>
+          <li class="filter-checkbox">
+            <input  class="filter-checkbox-input visually-hidden" id="advantages-section-feature" type="checkbox" name="advantages section">
+            <label for="advantages-section-feature">Блок преимуществ</label>
+          </li>
 
-            <li class="filter-checkbox">
-              <input  class="filter-checkbox-input visually-hidden" id="news-feature" type="checkbox" name="news" checked>
-              <label for="news-feature">Новости</label>
-            </li>
+          <li class="filter-checkbox">
+            <input  class="filter-checkbox-input visually-hidden" id="news-feature" type="checkbox" name="news" checked>
+            <label for="news-feature">Новости</label>
+          </li>
 
-            <li class="filter-checkbox">
-              <input  class="filter-checkbox-input visually-hidden" id="gallery-feature" type="checkbox" name="gallery">
-              <label for="gallery-feature">Галерея</label>
-            </li>
+          <li class="filter-checkbox">
+            <input  class="filter-checkbox-input visually-hidden" id="gallery-feature" type="checkbox" name="gallery">
+            <label for="gallery-feature">Галерея</label>
+          </li>
 
-            <li class="filter-checkbox">
-              <input  class="filter-checkbox-input visually-hidden" id="basket-feature" type="checkbox" name="basket">
-              <label for="basket-feature">Корзина</label>
-            </li>
-
+          <li class="filter-checkbox">
+            <input  class="filter-checkbox-input visually-hidden" id="basket-feature" type="checkbox" name="basket">
+            <label for="basket-feature">Корзина</label>
+          </li>
         </ul>
+      </fieldset>
 
-        </fieldset>
+      <button type="submit" class="button filter-submit">Показать</button>
+    </form>
 
-        <button type="submit" class="button filter-submit">Показать</button>
-
-      </form>
-
-      <div class="themes-wrap">
-
+    <div class="themes-wrap">
       <div class="sort-menu">
-
         <h2 class="sort-title">Сортировать:</h2>
-        
+
         <div class="sort-menu-items">
-          
           <ul class="sort-list">
-            
             <li class="sort-list-item">
               <a href="#">По цене</a>
             </li>
@@ -140,33 +126,19 @@
             <li class="sort-list-item">
               <a href="#">По названию</a>
             </li>
-
           </ul>
 
           <ul class="icons-dir">
-            
-            <li>
-              <a  class="icon-down" href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
-            </li>
-
-            <li>
-              <a  class="icon-up" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
-            </li>
-
+            <li><a  class="icon-down" href="#"><span class="visually-hidden">Сортировка по убыванию</span></a></li>
+            <li><a  class="icon-up" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a></li>
           </ul>
-
         </div>
-
       </div>
 
       <section class="themes">
-
         <ul class="themes-list">
-
           <li class="themes-list-item">
-            
             <img src="img/img-sedona.jpg" width="358" height="576" alt="sedona theme">
-
             <section class="themes-hover">
               <a href="#">
                 <h3 class="themes-hover-title">Sedona</h3>
@@ -174,13 +146,10 @@
               <p class="themes-hover-text">Информационный сайт<br> для туристов</p>
               <a class="button themes-hover-price">9 900  руб.</a>
             </section>
-            
           </li>
 
           <li class="themes-list-item">
-
             <img src="img/img-pink.jpg" width="358" height="617" alt="pink theme">
-
             <section class="themes-hover">
               <a href="#">
                 <h3 class="themes-hover-title">Pink app</h3>
@@ -188,27 +157,21 @@
               <p class="themes-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button themes-hover-price">9 900  руб.</a>
             </section>
-            
           </li>
 
           <li class="themes-list-item">
-            
             <img src="img/img-barbershop.jpg" width="358" height="617" alt="borodinsky theme">
-
             <section class="themes-hover">
               <a href="#">
                 <h3 class="themes-hover-title">Barbershop</h3>
               </a>
               <p class="themes-hover-text">Сайт салона красоты.<br> Для мужчин, да.</p>
               <a class="button themes-hover-price">9 900  руб.</a>
-              </section>
-            
+            </section>
           </li>
 
           <li class="themes-list-item">
-            
             <img src="img/img-mishka.jpg" width="358" height="617" alt="mishla theme">
-              
             <section class="themes-hover">
               <a href="#">
                 <h3 class="themes-hover-title">Mishka</h3>
@@ -216,11 +179,9 @@
               <p class="themes-hover-text">Интернет–магазин<br> вязаных игрушек</p>
               <a class="button themes-hover-price">9 900  руб.</a>
             </section>
-            
           </li>
 
           <li class="themes-list-item">
-            
             <img src="img/img-aplus.jpg" width="358" height="617" alt="A+ theme">
             <section class="themes-hover">
               <a href="#">
@@ -229,12 +190,10 @@
               <p class="themes-hover-text">Лендинг курсов повышения квалификации</p>
               <a class="button themes-hover-price">9 900  руб.</a>
             </section>
-            
           </li> 
         
           <li class="themes-list-item">
-            
-          <img src="img/img-kvast.jpg" width="358" height="617" alt="kvast theme">
+            <img src="img/img-kvast.jpg" width="358" height="617" alt="kvast theme">
             <section class="themes-hover">
               <a href="#">
                 <h3 class="themes-hover-title">Кваст</h3>
@@ -242,75 +201,45 @@
               <p class="themes-hover-text">Промо–сайт производителя крафтового кваса</p>
               <a class="button themes-hover-price">9 900  руб.</a>
             </section>
-            
           </li>
-        
         </ul>
 
         <ul class="themes-list-navigation">
-
-          <li class="themes-list-navigation-item">
-            <a class="themes-page active" href="page-1.html">1</a>
-          </li>
-          
-          <li class="themes-list-navigation-item">
-            <a class="themes-page" href="page-2.html">2</a>
-          </li>
-          
-          <li class="themes-list-navigation-item">
-            <a class="themes-page" href="page-3.html">3</a>
-          </li>
-
-          <li class="themes-list-navigation-item">
-            <a class="themes-page" href="next-page.html">Следующая</a>
-          </li>
-
-         </ul>
-
-       </section>
-
-      </div>
-
-    </main>
-
-    <footer>
-      
-      <h2 class="visually-hidden">Контакты</h2>
-
-      <section class="map">
-
-        <div class="map-container">
-
-          <section class="contact-data">
-
-            <h3 class="contacts">NЁRDS design studio</h3>
-            <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-            <p class="phone">тел. +7 (812) 275-75-75</p>
-            <button class="button write-us" type="button">Напишите нам</button>
-
-          </section>
-
-        </div>
-
-      </section>
-
-      <section class="social-networks">
-
-        <ul class="social-networks-list">
-          <li class="social-networks-item"><a class="social-button vk" href="vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="вконтакте"></a></li>
-          <li class="social-networks-item"><a class="social-button fb" href="fb.com"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-          <li class="social-networks-item"><a class="social-button insta" href="instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="imstagram"></a><li>
+          <li class="themes-list-navigation-item"><a class="themes-page active" href="page-1.html">1</a></li>
+          <li class="themes-list-navigation-item"><a class="themes-page" href="page-2.html">2</a></li>
+          <li class="themes-list-navigation-item"><a class="themes-page" href="page-3.html">3</a></li>
+          <li class="themes-list-navigation-item"><a class="themes-page" href="next-page.html">Следующая</a></li>
         </ul>
-
-        <div class="promo-wrap">
-         <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
-         <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-        
       </section>
+    </div>
+  </main>
 
-    </footer>
+  <footer>
+    <h2 class="visually-hidden">Контакты</h2>
 
-  </body>
+    <section class="map">
+      <div class="map-container">
+        <section class="contact-data">
+          <h3 class="contacts">NЁRDS design studio</h3>
+          <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">тел. +7 (812) 275-75-75</p>
+          <button class="button write-us" type="button">Напишите нам</button>
+        </section>
+      </div>
+    </section>
 
+    <section class="social-networks">
+      <ul class="social-networks-list">
+        <li class="social-networks-item"><a class="social-button vk" href="vk.com"><img src="img/vk-icon.svg" width="26" height="15" alt="вконтакте"></a></li>
+        <li class="social-networks-item"><a class="social-button fb" href="fb.com"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+        <li class="social-networks-item"><a class="social-button insta" href="instagram.com"><img src="img/insta-icon.svg" width="21" height="21" alt="imstagram"></a><li>
+      </ul>
+
+      <div class="promo-wrap">
+        <h3 class="promo-title">Давайте дружить, это выгодно!</h3>
+        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+</body>
 </html>
