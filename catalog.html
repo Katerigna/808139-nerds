@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/min.style.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="header">
+
+    <header class="header">
       <nav class="main-navigation navigation-catalog">
         <a href="index.html"><img class="logo" src="img/nerds-logo.svg" width="161" height="64" alt=logo></a>
 
@@ -224,7 +224,7 @@
           <h3 class="contacts">NЁRDS design studio</h3>
           <p class="address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <p class="phone">тел. +7 (812) 275-75-75</p>
-          <button class="button write-us" type="button">Напишите нам</button>
+          <a class="button write-us" href="write-us.html">Напишите нам</a>
         </section>
       </div>
     </section>
@@ -269,10 +269,9 @@
 
     <div class="form-text-wrap">
       <label for="email-text" class="contact-form-text">Текст письма:</label>
-      <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3">В свободной форме</textarea>
+      <textarea class="contact-text" id="email-text" name="contact-form-text" rows="3" placeholder="В свободной форме"></textarea>
       <button type="submit" class="button contact-form-submit">Отправить</button>
     </div>
-
   </form>
 
 </body>
