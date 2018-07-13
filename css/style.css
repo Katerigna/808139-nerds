@@ -510,11 +510,14 @@ caption {
 .contact-data {
   display: flex;
   flex-direction: column;
-  margin: 54px 0 0 0;
+  margin: 54px 0 0 140px;
   padding: 48px 50px 27px 50px;
   width: 219px;
   height: 235px;
   background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top:0;
 }
 
 .contacts {
@@ -544,12 +547,22 @@ caption {
   padding: 0;
 }
 
+.map-marker {
+  width: 360px;
+  height: 190px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 90px 395px 0 0;
+}
+
 .map {
   width: 100%;
   height: 416px;
-  background: #e4e4e4 url("../img/map.png") no-repeat;
+  /*background: #e4e4e4 url("../img/map.png") no-repeat;*/
   background-position: -17px 0;
   margin: 0 0 69px 0;
+  position: relative;
 }
 
 .map-container {
@@ -721,11 +734,11 @@ caption {
 .input-wrap input {
   width: 360px;
   height: 50px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(215, 220, 222, 1);
   border-radius: 3px;
   box-sizing: border-box;
   padding: 5px 10px;
-  color: rgba(68, 68, 68, 1);
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .input-wrap input::placeholder {
@@ -733,7 +746,7 @@ caption {
 }
 
 .input-wrap:hover input {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(180, 185, 187, 1);
 }
 
 .input-wrap:focus input {
